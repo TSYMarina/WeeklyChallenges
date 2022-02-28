@@ -5,12 +5,35 @@ namespace ChallengesWithTestsMark8
 {
     public class ChallengesSet03
     {
+        //public bool ArrayContainsAFalse2(bool[] vals)
+        //{
+        //    var retValue = false;
+        //    foreach (var item in vals)
+        //    {
+        //        if (item == false)
+        //        {
+        //            retValue = true;
+        //            break;
+        //        }
+        //    }
+        //    return retValue;
+        //}
+
         public bool ArrayContainsAFalse(bool[] vals)
         {
-            throw new NotImplementedException();
+            foreach (var item in vals)
+            {
+                if (item == false)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
-        public bool IsSumOfOddsOdd(IEnumerable<int> numbers)
+           
+
+public bool IsSumOfOddsOdd(IEnumerable<int> numbers)
         {
             throw new NotImplementedException();
         }

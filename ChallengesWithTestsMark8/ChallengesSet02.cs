@@ -32,8 +32,7 @@ namespace ChallengesWithTestsMark8
             min = double.MaxValue;
             if (numbers != null)
             {
-
-                foreach (var num in numbers)
+              foreach (var num in numbers)
                 {
                     if (num > max)
                     {
