@@ -16,4 +16,10 @@
     <ProjectReference Include="..\ChallengesWithTestsMark8\ChallengesWithTestsMark8.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="ChallengesSet03Tests.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
 </Project>
