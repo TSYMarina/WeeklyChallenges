@@ -44,7 +44,6 @@ namespace ChallengesWithTestsMark8
                     {
                         sumOfOdds++;
                     }
-
                 }
             }
             bool answer = sumOfOdds % 2 != 0 ? true : false;
@@ -102,12 +101,11 @@ namespace ChallengesWithTestsMark8
             return odds;
         }
 
+
         public void ChangeAllElementsToUppercase(string[] words)
         {
             for (int i = 0; i < words.Length; i++)
                 words[i] = words[i].ToUpper();
         }
-
-
     }
 }

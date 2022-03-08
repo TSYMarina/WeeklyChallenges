@@ -71,6 +71,7 @@ namespace ChallengesWithTestsMark8
             }
             return numbersSum;
         }
+        // Alternative using LINQ: return numbers == null || number.Length == 0 ? 0: numbers.Sum();
 
         public int SumEvens(int[] numbers)
         {
@@ -86,6 +87,8 @@ namespace ChallengesWithTestsMark8
             return evensSum;
         }
 
+        // Alternative using LINQ:  return numbers == null || numbers.Length == 0 ? : numbers.Where(x => x % 2 ==0)...
+
         public bool IsSumOdd(List<int> numbers)
         {
             int numbersSum = 0;
@@ -98,11 +101,13 @@ namespace ChallengesWithTestsMark8
             }
             return numbersSum % 2 == 0 ? false : true;
         }
+        // Alternative using LINQ: return (numbers != null || numbers.Count !=0) && numbers.Sum() % 2 != 0;
+
 
         public long CountOfPositiveOddsBelowNumber(long number)
         {
             long countOfPOsitiveOdd = 0;
-                            for (long i = 0; i < number; i++)
+            for (long i = 0; i < number; i++)
                 {
                     if (i % 2 != 0)
                     {
@@ -110,6 +115,8 @@ namespace ChallengesWithTestsMark8
                     }
                 }
              return countOfPOsitiveOdd;
+
+            // return number <0 ? 0 : number / 2;
         }
     }
 }
