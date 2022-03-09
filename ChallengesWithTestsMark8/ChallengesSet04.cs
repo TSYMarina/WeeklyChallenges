@@ -57,27 +57,39 @@ namespace ChallengesWithTestsMark8
 
         public bool CouldFormTriangle(int sideLength1, int sideLength2, int sideLength3)
         {
-            if (sideLength1 <= 0 || sideLength2 <= 0 || sideLength3 <= 0)
-            {
-                return false;
-            }
-            else if (sideLength1 + sideLength2 <= sideLength3)
-            {
-                return false;
-            }
-            else if (sideLength3 + sideLength2 <= sideLength1)
-            {
-                return false;
-            }
-            else if (sideLength1 + sideLength3 <= sideLength2)
-            {
-                return false;
-            }
-            else
+
+            if ((sideLength1 > 0 || sideLength2 > 0 || sideLength3 > 0)
+                && sideLength1 + sideLength2 > sideLength3
+                && sideLength3 + sideLength2 > sideLength1
+                && sideLength1 + sideLength3 > sideLength2)
             {
                 return true;
             }
+            return false;
         }
+
+        // Alternative:
+        //        if (sideLength1 <= 0 || sideLength2 <= 0 || sideLength3 <= 0)
+        //    {
+        //        return false;
+        //    }
+        //    else if (sideLength1 + sideLength2 <= sideLength3)
+        //    {
+        //        return false;
+        //    }
+        //    else if (sideLength3 + sideLength2 <= sideLength1)
+        //    {
+        //        return false;
+        //    }
+        //    else if (sideLength1 + sideLength3 <= sideLength2)
+        //    {
+        //        return false;
+        //    }
+        //    else
+        //    {
+        //        return true;
+        //    }
+        //}
 
         public bool IsStringANumber(string input)
         {

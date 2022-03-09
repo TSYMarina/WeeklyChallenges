@@ -55,7 +55,7 @@ namespace ChallengesWithTestsMark8
             {
                 return password.Any(char.IsDigit) &&
                        password.Any(char.IsUpper) &&
-                       (password.Any(char.IsLower));
+                       password.Any(char.IsLower);
             }
         }
 
